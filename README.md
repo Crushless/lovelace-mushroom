@@ -1,4 +1,4 @@
-# 🍄 Mushroom
+# 🍄 Mushroom Extended
 
 [![hacs][hacs-badge]][hacs-url]
 [![release][release-badge]][release-url]
