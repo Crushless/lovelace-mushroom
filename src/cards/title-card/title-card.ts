@@ -139,6 +139,9 @@ export class TitleCard extends MushroomBaseElement implements LovelaceCard {
                     variables: {
                         config: this._config,
                         user: this.hass.user!.name,
+                        location: window.location,
+                        pathname: window.location.pathname,
+                        view: window.location.pathname.replace(/\/.*\/|\?.*/,""),
                     },
                     strict: true,
                 }

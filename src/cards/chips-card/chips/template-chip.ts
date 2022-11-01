@@ -170,6 +170,9 @@ export class TemplateChip extends LitElement implements LovelaceChip {
                         config: this._config,
                         user: this.hass.user!.name,
                         entity: this._config.entity,
+                        location: window.location,
+                        pathname: window.location.pathname,
+                        view: window.location.pathname.replace(/\/.*\/|\?.*/,""),
                     },
                     strict: true,
                 }

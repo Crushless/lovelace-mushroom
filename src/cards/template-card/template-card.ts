@@ -248,7 +248,9 @@ export class TemplateCard extends MushroomBaseElement implements LovelaceCard {
                         config: this._config,
                         user: this.hass.user!.name,
                         entity: this._config.entity,
-                        location: window.location ,
+                        location: window.location,
+                        pathname: window.location.pathname,
+                        view: window.location.pathname.replace(/\/.*\/|\?.*/,""),
                     },
                     strict: true,
                 }
